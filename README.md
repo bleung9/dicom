@@ -24,7 +24,7 @@ The two controllers that handle requests are in `app/controllers`. Saved images 
 
 There are various comments in the code that are relevant to the submission. Please read them.
 
-This project uses a ruby gem called `dicom` to handle operations on DICOM images. There is a interface to convert .dcm files to other formats, but it has a dependency on another ruby gem which failed to install. This may be due to an OS upgrade I did on my machine. The line of code that would otherwise do the format conversion is `app/controllers/images_controller.rb:34`. Currently, the GET `images` endpoint is loading a pre-saved file in the `storage` folder.
+This project uses a ruby gem called `dicom` to handle operations on DICOM images. This gem provides an interface to convert .dcm files to other formats, but it has a dependency on another ruby gem which failed to install. This may be due to an OS upgrade I did on my machine. The line of code that would otherwise do the format conversion is `app/controllers/images_controller.rb:34`. Currently, the GET `images` endpoint is loading a pre-saved file in the `storage` folder.
 
 Tests are found in `spec/requests` and can be run w/ the above command.
 
